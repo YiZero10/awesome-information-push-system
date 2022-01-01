@@ -26,8 +26,8 @@
           <el-row
             type="flex"
             justify="center"
-            style="margin-top:400px"
-            v-if="$store.state.user.info.type < 2"
+            style="margin-top:180px"
+            v-if="$store.state.user.info.type < 2 && !fromPage"
           >
             <el-col :span="1">
               <el-button
@@ -43,7 +43,7 @@
           <el-row
             type="flex"
             justify="center"
-            style="margin-top:400px"
+            style="margin-top:180px"
             v-if="fromPage"
           >
             <el-col :span="8">
